@@ -106,6 +106,7 @@
   border: 1px solid black;
   border-bottom: none;
   text-align: center;
+  padding-top: 0.8rem;
 }
 
 .tabs__content {
@@ -153,6 +154,62 @@
 
 .tabs__content__link {
   text-decoration: none;
+}
+
+.social {
+  min-height: 140px;
+  background-color: #F8EFEF;
+}
+
+.social__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.social__text {
+  width: 40%;
+}
+
+.social__text-title {
+  padding-bottom: 2rem;
+}
+
+.social__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  width: 70%;
+}
+
+.social__icon a {
+  color: #CCCCCC;
+  padding: 1.2rem;
+}
+
+.social__icon a:hover {
+  color: white;
+}
+
+.axit {
+  min-height: 100px;
 }
 
 h2 {
