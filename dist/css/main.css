@@ -110,7 +110,7 @@
 .tabs__tab_text_active {
   font-size: 0.9rem;
   font-family: 'Open Sans', sans-serif;
-  border: 1px solid black;
+  border: 1px solid #C6CBCD;
   border-bottom: none;
   text-align: center;
   padding: 0.5rem 0;
@@ -130,7 +130,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid #C6CBCD;
   border-right: none;
   padding: 2.8rem 1rem 0px 6rem;
 }
