@@ -10,12 +10,12 @@
     &__text {
         width: 40%;
 
-        &-title {
+        &_title {
             padding-bottom: 2rem;
             
         }
-        &-descr {
-           
+        &_descr {
+           color: #86878B;
         }
         
     }
@@ -26,7 +26,7 @@
     &__icons {
         display: flex; 
         align-items: center;
-        list-style:none;
+        list-style: none;
         width: 70%;
         
         

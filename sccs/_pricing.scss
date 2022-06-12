@@ -1,0 +1,77 @@
+.pricing {
+    min-height: 1040px;
+    background-color: #F5F5F5;
+    &__text {
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4.1rem;
+        padding-top: 6.3rem;
+
+        &_underline{
+            margin-top: 3.2rem;
+            margin-bottom: 2.3rem;
+            width: 15%;
+            border: 1px solid #EC7979;
+        }
+        &_descr {
+            color: #86878B;
+        }
+    }
+    &__lists {
+        padding-top: 1.15rem;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 23rem;
+        background-color: #333333;
+        &_num{
+            font-family: 'Raleway';  
+        }
+
+        &:hover {
+          transform: translateY(-1.15rem);  
+          box-shadow: 0rem 0.4rem 0rem 0rem rgba($color: #8c8a8a, $alpha: 0.1);
+          transition: all 1s ease;
+        } 
+
+        &_tarif {
+            background-color: #333333;
+            color: #FFFFFF;
+            padding: 0.8rem 0;
+
+        }
+        &_price {
+            font-family: 'Raleway';
+            color: #FFFFFF;
+            padding: 1.95rem 0;
+            border-top: 2px solid #FFFFFF;
+            border-bottom: 2px solid #FFFFFF;   
+        }
+        &_space {
+            
+            &_title {
+                background-color: #333333;
+                color: #FFFFFF80;
+                padding: 0.8rem 0;
+            }
+            &_Gb {
+                padding: 0.8rem 0;
+                background-color: #FFFFFF;
+                color: #86878B;
+                border: 2px solid #F5F5F5;
+                list-style: none;
+            }
+
+        }
+        
+    }
+}
