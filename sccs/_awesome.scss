@@ -1,7 +1,25 @@
 .awesome {
-    /*&__wrapper {
-       display: flex;
-    }*/
+    min-height: 770px;
+    &__text {
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4.1rem;
+        padding-top: 6.3rem;
+
+        &_underline{
+            margin-top: 3.2rem;
+            margin-bottom: 2.3rem;
+            width: 15%;
+            border: 1px solid #EC7979;
+        }
+        &_descr {
+            color: #86878B;
+        }
+    }
+    
     &__cards {
         display: flex;
         justify-content: center;
@@ -13,29 +31,14 @@
         justify-content: space-between;
         align-items: center;
 
-        &-title{
+        &_title{
             padding-top: 2rem;
         }
-        &-descr {
+        &_descr {
            padding-top: 2.8rem; 
            text-align: center;
         }
     }
-    &__text {
-        display: flex;
-        
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 4.1rem;
-        padding-top: 6.3rem;
-
-        &-underline{
-            margin-top: 3.2rem;
-            margin-bottom: 2.3rem;
-            width: 15%;
-            border: 1px solid red;
-        }
-    }
+    
     
 }
