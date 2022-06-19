@@ -43,7 +43,8 @@
             padding: 3rem 25rem 2.3rem 0rem;
         }
         &__link {
-            color: #FFFFFF
+            color: #FFFFFF;
+           
         }
         &__button {
             color: #FFFFFF;
@@ -58,7 +59,13 @@
             font-weight: 600;
             font-size: 1rem;
             letter-spacing: 1px;
-            cursor: pointer
+            cursor: pointer;
+            &:hover {
+                background-color: rgb(126, 83, 114);
+                cursor: pointer;
+                transition: all 1s ease;
+            }
+            
         }
         &__link {
             text-decoration: none;
@@ -110,7 +117,12 @@
                 font-weight: 600;
                 font-size: 1.2rem;
                 letter-spacing: 1px;
-                cursor: pointer
+                cursor: pointer;
+                &:hover {
+                    background-color: rgb(126, 83, 114);
+                    cursor: pointer;
+                    transition: all 1s ease;
+                }
                 
             }
         }

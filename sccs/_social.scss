@@ -28,8 +28,6 @@
         align-items: center;
         list-style: none;
         width: 70%;
-        
-        
     }
     &__icon {
         
@@ -40,10 +38,8 @@
             
             &:hover {
                 color: white;
+                transition: all 1s ease;
             }
         }
-        
-       
     }
-    
 }
