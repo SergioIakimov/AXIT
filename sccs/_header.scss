@@ -25,12 +25,16 @@
     }
     &__link {
         &_text {
-            
             color: #FFFFFF;
             font-size: 0.9rem;
             font-weight: 600;
             padding: 1rem 3.8rem 1rem 0;
-
+            &:hover {
+                color: rgb(126, 83, 114);
+                cursor: pointer;
+                transition: all 1s ease;
+            }
         }
+        
     }
 }

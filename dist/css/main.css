@@ -163,6 +163,13 @@
   cursor: pointer;
 }
 
+.tabs__content__button:hover {
+  background-color: #7e5372;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 .tabs__content__link {
   text-decoration: none;
 }
@@ -221,6 +228,8 @@
 
 .social__icon a:hover {
   color: white;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .axit {
@@ -363,6 +372,13 @@
   padding: 1rem 3.8rem 1rem 0;
 }
 
+.nav__link_text:hover {
+  color: #7e5372;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 .color-word {
   color: #EC7979;
 }
@@ -433,6 +449,13 @@
   cursor: pointer;
 }
 
+.promo__content__button:hover {
+  background-color: #7e5372;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 .promo__content__link {
   text-decoration: none;
 }
@@ -494,6 +517,13 @@
   font-size: 1.2rem;
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+.promo__content__form_pass button:hover {
+  background-color: #7e5372;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .customers {
@@ -671,6 +701,13 @@
   cursor: pointer;
 }
 
+.stylish__button:hover {
+  background-color: #7e5372;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 .stylish__link {
   padding-top: 4.5rem;
   text-decoration: none;
@@ -775,6 +812,13 @@
   cursor: pointer;
 }
 
+.contact__form_pass button:hover {
+  background-color: #7e5372;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 .footer {
   min-height: 165px;
   background-color: black;
@@ -821,6 +865,8 @@
 
 .footer__icon a:hover {
   color: white;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .footer__copyright {

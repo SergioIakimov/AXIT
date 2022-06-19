@@ -57,7 +57,12 @@
             font-weight: 600;
             font-size: 1.2rem;
             letter-spacing: 1px;
-            cursor: pointer
+            cursor: pointer;
+            &:hover {
+                background-color: rgb(126, 83, 114);
+                cursor: pointer;
+                transition: all 1s ease;
+            }
         }
         &__link {
             text-decoration: none;
