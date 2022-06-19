@@ -1,0 +1,58 @@
+.stylish {
+    min-height: 442px;
+    height: 100%;
+    background: 
+      linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+      ),
+      url("../img/stylish-bg.jpg") center top;
+    background-size: cover;
+
+    &__text {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 3.1rem;
+      padding-top: 6.3rem;
+      &_title {
+          letter-spacing: -0.05rem;
+          color: #FFFFFF;
+      }
+      &::after {
+          content: '';
+          position: absolute;
+          top: 45%;
+          left: 43%;
+          width: 14%;
+          border: 1px solid #FFFFFF;
+      }
+     
+      &_descr {
+          padding-top: 6rem;
+          color: #FFFFFF;
+      }
+    }
+    &__button {
+      padding: 1rem 8.8rem;
+      color: #FFFFFF;
+      display: block;
+      
+      text-transform: none;
+      background-color: transparent;
+      border: 2px solid #FFFFFF;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      cursor: pointer
+    }
+    &__link {
+      padding-top: 4.5rem;
+      text-decoration: none;
+    }
+}
