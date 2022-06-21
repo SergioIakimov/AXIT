@@ -3,20 +3,24 @@
     background-color: #F5F5F5;
     &__text {
         display: flex;
-        
+        position: relative;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-bottom: 4.1rem;
         padding-top: 6.3rem;
-
-        &_underline{
-            margin-top: 3.2rem;
-            margin-bottom: 2.3rem;
-            width: 15%;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 60%;
+            left: 43%;
+            width: 14%;
             border: 1px solid #EC7979;
         }
+
+       
         &_descr {
+            padding-top: 6rem;
             color: #86878B;
         }
     }
