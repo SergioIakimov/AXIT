@@ -15,22 +15,28 @@
             <a href="" class="header__logo">
               <img src="./img/logo (1).svg" alt="AXIT LOGO" />
             </a>
-            <nav class="nav">
-              <ul class="nav__link">
-                <h3 class="nav__link_text">Features</h3>
+            <div class="menu-btn">
+              <span class="menu-btn__burger"></span>
+            </div>
+            <nav class="menu">
+              <ul class="nav">
+                <li class="nav__link active">
+                  <h3 class="nav__link_text">Features</h3>
+                </li>
+                <li class="nav__link">
+                  <h3 class="nav__link_text">About</h3>
+                </li>
+                <li class="nav__link">
+                  <h3 class="nav__link_text">Pricing</h3>
+                </li>
+                <li class="nav__link">
+                  <h3 class="nav__link_text">Reviews</h3>
+                </li>
+                <li class="nav__link">
+                  <h3 class="nav__link_text">Contact</h3>
+                </li>
               </ul>
-              <ul class="nav__link">
-                <h3 class="nav__link_text">About</h3>
-              </ul>
-              <ul class="nav__link">
-                <h3 class="nav__link_text">Pricing</h3>
-              </ul>
-              <ul class="nav__link">
-                <h3 class="nav__link_text">Reviews</h3>
-              </ul>
-              <ul class="nav__link">
-                <h3 class="nav__link_text">Contact</h3>
-              </ul>
+             
             </nav>
           </div>
         </div>
@@ -125,43 +131,109 @@
       <div class="container">
         <div class="tabs__wrapper">
           <div class="tabs__tabs">
-            <div class="tabs__tab">
-              <h5 class="tabs__tab_text_active">TAB 1</h5>
-            </div>
-            <div class="tabs__tab">
-              <h5 class="tabs__tab_text">TAB 2</h5>
-            </div>
-            <div class="tabs__tab">
-              <h5 class="tabs__tab_text">TAB 3</h5>
-            </div>
-          </div>
-          <div class="tabs__content">
-            <div class="tabs__content__text">
-              <div class="tabs__content__text_title">
-                <h3>Tabs with soft transitioning effect.</h3>
+           <!-- <container class="tabs__tab"> -->
+            <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+            <label for="tab-btn-1" class="tabs__tab"><h5 class="tabs__tab_text_active">TAB 1</h5></label>
+            <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+            <label for="tab-btn-2" class="tabs__tab"><h5 class="tabs__tab_text">TAB 2</h5></label>
+            <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+            <label for="tab-btn-3" class="tabs__tab"><h5 class="tabs__tab_text">TAB 3</h5></label>
+           <!-- </container> -->
+            <div id="content-1">
+             <div class="tabs__content">
+           
+              <div class="tabs__content__text">
+                <div class="tabs__content__text_title">
+                  <h3>Tab1 with soft transitioning effect.</h3>
+                </div>
+                <div class="tabs__content__text_descr">
+                  <h5>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                    lacus accumsan et viverra justo commodo. Proin sodales
+                    pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                    parturient montes.
+                  </h5>
+                </div>
+                <div class="tabs__content__text_descr">
+                  <h5>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet.
+                  </h5>
+                </div>
+                <a class="tabs__content__link" href="#!"
+                  ><button class="tabs__content__button">Download</button></a
+                >
               </div>
-              <div class="tabs__content__text_descr">
-                <h5>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
-                  lacus accumsan et viverra justo commodo. Proin sodales
-                  pulvinar tempor. Cum sociis natoque penatibus et magnis dis
-                  parturient montes.
-                </h5>
-              </div>
-              <div class="tabs__content__text_descr">
-                <h5>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean euismod bibendum laoreet.
-                </h5>
-              </div>
-              <a class="tabs__content__link" href="#!"
-                ><button class="tabs__content__button">Download</button></a
-              >
+              <div class="tabs__content__img">
+                <img src="./img/statue.png" alt="Statue od liberty" />
+             </div>
             </div>
-            <div class="tabs__content__img">
-              <img src="./img/statue.png" alt="Statue od liberty" />
+
+
             </div>
+            <div id="content-2">
+             <div class="tabs__content">
+              <div class="tabs__content__text">
+                <div class="tabs__content__text_title">
+                  <h3>Tab2 with soft transitioning effect.</h3>
+                </div>
+                <div class="tabs__content__text_descr">
+                  <h5>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                    lacus accumsan et viverra justo commodo. Proin sodales
+                    pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                    parturient montes.
+                  </h5>
+                </div>
+                <div class="tabs__content__text_descr">
+                  <h5>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet.
+                  </h5>
+                </div>
+                <a class="tabs__content__link" href="#!"
+                  ><button class="tabs__content__button">Download</button></a
+                >
+              </div>
+              <div class="tabs__content__img">
+                <img src="./img/for slider 2.jpg" alt="Statue od liberty" />
+              </div>
+             </div>
+            </div>
+
+            <div id="content-3">
+             <div class="tabs__content">
+              <div class="tabs__content__text">
+                <div class="tabs__content__text_title">
+                  <h3>Tab3 with soft transitioning effect.</h3>
+                </div>
+                <div class="tabs__content__text_descr">
+                  <h5>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                    lacus accumsan et viverra justo commodo. Proin sodales
+                    pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                    parturient montes.
+                  </h5>
+                </div>
+                <div class="tabs__content__text_descr">
+                  <h5>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet.
+                  </h5>
+                </div>
+                <a class="tabs__content__link" href="#!"
+                  ><button class="tabs__content__button">Download</button></a
+                >
+              </div>
+              <div class="tabs__content__img">
+                <img src="./img/for slider 3.jpg" alt="Statue od liberty" />
+              </div>
+             </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -314,73 +386,83 @@
               <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
             </div>
           </div>
-          <div class="customers__cards">
-            <div class="customers__card">
-              <div class="customers__card_descr">
-                <h5>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus accusamus expedita repellat similique odio
-                  aspernatur ex, architecto eaque quo suscipit.
-                </h5>
-              </div>
-              <div class="customers__card__avatar">
-                <div class="customers__card__avatar_img">
-                  <img src="./img/Ellipse 7.png" alt="keyboard" />
+          <div class="customers__slider">
+            <div class="customers__cards">
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <div class="customers__card first">
+                <div class="customers__card_descr">
+                  <h5>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloribus accusamus expedita repellat similique odio
+                    aspernatur ex, architecto eaque quo suscipit.
+                  </h5>
                 </div>
-                <div class="customers__card__avatar__text">
-                  <div class="customers__card__avatar__text_title">
-                    <h4>Davis Rhiel Madsen</h4>
+                <div class="customers__card__avatar">
+                  <div class="customers__card__avatar_img">
+                    <img src="./img/Ellipse 7.png" alt="keyboard" />
                   </div>
-                  <div class="customers__card__avatar__text_descr">
-                    <h5>Manager</h5>
+                  <div class="customers__card__avatar__text">
+                    <div class="customers__card__avatar__text_title">
+                      <h4>Davis Rhiel Madsen</h4>
+                    </div>
+                    <div class="customers__card__avatar__text_descr">
+                      <h5>Manager</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="customers__card">
+                <div class="customers__card_descr">
+                  <h5>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloribus accusamus expedita repellat similique odio
+                    aspernatur ex, architecto eaque quo suscipit.
+                  </h5>
+                </div>
+                <div class="customers__card__avatar">
+                  <div class="customers__card__avatar_img">
+                    <img src="./img/Ellipse 7 (1).png" alt="keyboard" />
+                  </div>
+                  <div class="customers__card__avatar__text">
+                    <div class="customers__card__avatar__text_title">
+                      <h4>Jaydon Rosser</h4>
+                    </div>
+                    <div class="customers__card__avatar__text_descr">
+                      <h5>Manager</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="customers__card">
+                <div class="customers__card_descr">
+                  <h5>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloribus accusamus expedita repellat similique odio
+                    aspernatur ex, architecto eaque quo suscipit.
+                  </h5>
+                </div>
+                <div class="customers__card__avatar">
+                  <div class="customers__card__avatar_img">
+                    <img src="./img/Ellipse 7 (2).png" alt="keyboard" />
+                  </div>
+                  <div class="customers__card__avatar__text">
+                    <div class="customers__card__avatar__text_title">
+                      <h4>Cooper Dorwart</h4>
+                    </div>
+                    <div class="customers__card__avatar__text_descr">
+                      <h5>Manager</h5>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="customers__card">
-              <div class="customers__card_descr">
-                <h5>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus accusamus expedita repellat similique odio
-                  aspernatur ex, architecto eaque quo suscipit.
-                </h5>
-              </div>
-              <div class="customers__card__avatar">
-                <div class="customers__card__avatar_img">
-                  <img src="./img/Ellipse 7 (1).png" alt="keyboard" />
-                </div>
-                <div class="customers__card__avatar__text">
-                  <div class="customers__card__avatar__text_title">
-                    <h4>Jaydon Rosser</h4>
-                  </div>
-                  <div class="customers__card__avatar__text_descr">
-                    <h5>Manager</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="customers__card">
-              <div class="customers__card_descr">
-                <h5>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Doloribus accusamus expedita repellat similique odio
-                  aspernatur ex, architecto eaque quo suscipit.
-                </h5>
-              </div>
-              <div class="customers__card__avatar">
-                <div class="customers__card__avatar_img">
-                  <img src="./img/Ellipse 7 (2).png" alt="keyboard" />
-                </div>
-                <div class="customers__card__avatar__text">
-                  <div class="customers__card__avatar__text_title">
-                    <h4>Cooper Dorwart</h4>
-                  </div>
-                  <div class="customers__card__avatar__text_descr">
-                    <h5>Manager</h5>
-                  </div>
-                </div>
-              </div>
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
             </div>
           </div>
         </div>
