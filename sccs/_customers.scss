@@ -1,3 +1,9 @@
+.navigation-manual,
+    #radio3,
+    #radio2,
+    #radio1 {
+        display: none;
+    }
 .customers {
     min-height: 741px;
     &__text {

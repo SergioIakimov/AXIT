@@ -101,9 +101,13 @@
             width: 11rem;
             &_text{
                 padding-right: 2rem;
+                padding: 0.5rem 3.5rem;
                 font-size: 0.9rem;
                 font-family: 'Open Sans', sans-serif;
                 text-align: center;
+                &_active {
+                    padding: 0.5rem 4rem;
+                }
             }
         }
         &__content {
@@ -343,6 +347,126 @@
             height: 75%;
         }
     }
+    .menu-btn {
+        position: absolute;
+        z-index: 5; //greater than z-index of .menu and .nav = 3
+        right: 1rem;
+        top: 1rem;
+        height: 20px;
+        width: 28px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    
+        &__burger {
+            position: absolute;
+            right: 0;
+            top: 0.5rem;
+            width: 28px;
+            height: 3px;
+            background: white;
+            transition: all 0.5s ease-in-out;
+    
+            &::before {
+                content: '';
+                position: absolute;
+                top: -8px;
+                width: 28px;
+                height: 3px;
+                background: white;
+                transition: all 0.5s ease-in-out;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 8px;
+                width: 28px;
+                height: 3px;
+                background: white;
+                transition: all 0.5s ease-in-out;
+            }
+    
+            &.open {
+                transform: rotate(720deg);
+                background: transparent;
+    
+                &::before{
+                    transform: rotate(45deg) translate(5px, 8px);
+                }
+                &::after{
+                    width: 28px;
+                    transform: rotate(-45deg) translate(3px, -7px);
+                }
+    
+                
+            }
+        }
+    }
+    .menu {
+        z-index: 3; //add this index in affort to overlay .promo__content__title, cause using transform or opacity make z-index =0
+        position: fixed;
+        top: 0;
+        left:  0;
+        width: 100vw;
+        opacity: 0.98;
+        visibility: hidden;
+    
+        &.open {
+            visibility: visible;
+        }
+    
+        .nav {
+            z-index: 3; //add this index in affort to overlay .promo__content__title {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            background: rgb(13, 2, 2);
+            list-style-type: none;
+            padding-right: 1rem;
+            transform: translateY(-100%);
+            transition: all 0.5s ease-in-out;
+        
+            &.open {
+              z-index: 3;
+              transform: translateY(0);
+            }
+    
+            &__link {
+                transform: translateX(100vw);
+                transition: all 0.5s ease-in-out;
+    
+                &.open {
+                    transform: translateX(0);
+                }
+    
+                &.active > h3 {
+                    color: violet;
+    
+                }
+            }
+    
+            &__link_text {
+                display: inline-block;
+                font-size: 2rem;
+                text-transform: uppercase;
+                padding: 0rem 0;
+                font-weight: 300;
+                transition: all 0.5s ease-in-out;
+    
+                &.hover {
+                    color: violet;
+                }
+            }
+        }
+    }
+    
+    @for $i from 1 through 5 {
+        .nav__link:nth-child(#{$i}) {
+            transition-delay: ($i*0.1s)+ 0.15s;
+        }
+    }
     
 
     .promo {
@@ -434,6 +558,10 @@
             
             &_text{
                 padding-right: 0rem;
+                padding: 0.5rem 1.5rem;
+                &_active {
+                    padding: 0.5rem 2rem;
+                }
             }
         }
         &__content {
@@ -560,8 +688,9 @@
       
     }
     .customers {
-        display: none; //remove this property later
-        min-height: 614px;
+       
+        min-height: 581px;
+        
         &__text {
             padding-bottom: 1.1rem;
             padding-top: 1.9rem;
@@ -580,18 +709,35 @@
                 padding-top: 3.4rem;
                 text-align: center;
             }
+        }
+
+
+        &__slider {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }  
+        &__cards {
+            width: 400%;
+            justify-content: start;
           }
+      
       &__card {
+        width: 25%;
+        transition: 1s;
         &_descr  {
             padding: 1.7rem 1.5rem;
+            & h5 {
+                font-size: 1rem;
+            }
         }
         &__avatar {
-            padding-bottom: 3rem;
+            padding-bottom: 0rem;
             &__text {
               padding-left: 1rem;
               padding-top: 0.5rem;
               &_title h4{
-                font-size: 1.1rem;
+                font-size: 1rem;
               }
               &_descr {  
                 padding-top: 0rem;
@@ -604,6 +750,43 @@
         }
       }
     }
+    
+    .navigation-manual {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .manual-btn {
+        border: 2px solid #59595a;
+        padding: 2%;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 1s;
+      }
+      
+      .manual-btn:not(:last-child) {
+        margin-right: 2em;
+      }
+      
+      .manual-btn:hover {
+        background: #292a2a;
+      }
+      .manual-btn:focus:active {
+        background: #424343;
+      }
+      #radio1:checked ~ .first {
+        margin-left: 0;
+      }
+      
+      #radio2:checked ~ .first {
+        margin-left: -25%;
+      }
+      
+      #radio3:checked ~ .first {
+        margin-left: -50%;
+      }
+
     .stylish {
       &__text {
         padding-bottom: 1.1rem;

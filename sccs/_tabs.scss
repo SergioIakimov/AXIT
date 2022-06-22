@@ -1,32 +1,47 @@
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+    display: block;
+}
+
 .tabs {
     &__wrapper {
         padding-top: 100px;
     }
     &__tabs {
-        display: flex;
+        // display: flex;
         justify-content: left;
-        align-items: center;    
+        align-items: center;  
+        &>input[type="radio"] {
+            display: none;
+        }
+        &>div {
+            display: none;
+        }  
     }
 
     &__tab {
-        width: 12rem;
-
         &_text{
+            display: inline-block;
             font-size: 0.9rem;
             font-family: 'Open Sans', sans-serif;
             text-align: center;
+            padding: 0.5rem 4.5rem;
             &_active{
+                display: inline-block;
                 font-size: 0.9rem;
                 font-family: 'Open Sans', sans-serif;
                 border: 1px solid #C6CBCD ;
                 border-bottom: none;
                 text-align: center;
-                padding: 0.5rem 0;
+                padding: 0.5rem 5rem;
             }
         }
     }
     &__content {
         display: flex;
+        transition: 2s;
         
 
         &__text {
@@ -70,3 +85,4 @@
     
     
 }
+
