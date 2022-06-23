@@ -342,6 +342,7 @@
         }
         &__logo {
             padding-left: 1rem;
+            z-index: 10;
         }
         & img {
             height: 75%;
@@ -443,19 +444,18 @@
     
                 &.active > h3 {
                     color: violet;
-    
                 }
             }
     
             &__link_text {
                 display: inline-block;
-                font-size: 2rem;
-                text-transform: uppercase;
-                padding: 0rem 0;
-                font-weight: 300;
+                font-size: 1.5rem;
+                // text-transform: uppercase;
+                padding: 1.5rem 0;
+                // font-weight: 300;
                 transition: all 0.5s ease-in-out;
     
-                &.hover {
+                &:hover {
                     color: violet;
                 }
             }
@@ -464,7 +464,7 @@
     
     @for $i from 1 through 5 {
         .nav__link:nth-child(#{$i}) {
-            transition-delay: ($i*0.1s)+ 0.15s;
+            transition-delay: ($i*0.1s)+ 0.2s;
         }
     }
     
@@ -812,7 +812,7 @@
       }
     }
     .contact {
-        min-height: 848px;
+        min-height: 843px;
       &__text {
         padding-bottom: 1.1rem;
         padding-top: 3rem;
@@ -842,12 +842,12 @@
         }
         &__message {
             &_text input {
-                padding: 3rem 8rem 1.2rem 0rem;
+                padding: 3rem 8rem 11.8rem 0rem;;
               }
         }
         &_pass button{
             width: 18rem;
-            margin-top: 14rem;
+            margin-top: 3rem;
         }
       }
     }
