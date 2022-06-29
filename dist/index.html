@@ -133,11 +133,11 @@
           <div class="tabs__tabs">
            <!-- <container class="tabs__tab"> -->
             <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
-            <label for="tab-btn-1" class="tabs__tab"><h5 class="tabs__tab_text_active">TAB 1</h5></label>
+            <label for="tab-btn-1" class="tabs__tab" id="switch-1"><h5 class="tabs__tab_text">TAB 1</h5></label>
             <input type="radio" name="tab-btn" id="tab-btn-2" value="">
-            <label for="tab-btn-2" class="tabs__tab"><h5 class="tabs__tab_text">TAB 2</h5></label>
+            <label for="tab-btn-2" class="tabs__tab" id="switch-2"><h5 class="tabs__tab_text">TAB 2</h5></label>
             <input type="radio" name="tab-btn" id="tab-btn-3" value="">
-            <label for="tab-btn-3" class="tabs__tab"><h5 class="tabs__tab_text">TAB 3</h5></label>
+            <label for="tab-btn-3" class="tabs__tab" id="switch-3"><h5 class="tabs__tab_text">TAB 3</h5></label>
            <!-- </container> -->
             <div id="content-1">
              <div class="tabs__content">
@@ -387,10 +387,11 @@
             </div>
           </div>
           <div class="customers__slider">
+              
             <div class="customers__cards">
-              <input type="radio" name="radio-btn" id="radio1" />
-              <input type="radio" name="radio-btn" id="radio2" />
-              <input type="radio" name="radio-btn" id="radio3" />
+                      <input type="radio" name="radio-btn" id="radio1" />
+                      <input type="radio" name="radio-btn" id="radio2" />
+                      <input type="radio" name="radio-btn" id="radio3" />
               <div class="customers__card first">
                 <div class="customers__card_descr">
                   <h5>
@@ -458,11 +459,12 @@
                   </div>
                 </div>
               </div>
+              
             </div>
             <div class="navigation-manual">
-              <label for="radio1" class="manual-btn"></label>
-              <label for="radio2" class="manual-btn"></label>
-              <label for="radio3" class="manual-btn"></label>
+              <label for="radio1" class="manual-btn" id="manual-btn-1"></label>
+              <label for="radio2" class="manual-btn" id="manual-btn-2"><div class="button__active"></div></label>
+              <label for="radio3" class="manual-btn" id="manual-btn-3"><div class="button__active"></div></label>
             </div>
           </div>
         </div>
