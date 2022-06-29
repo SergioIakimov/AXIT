@@ -94,6 +94,12 @@
         }
     }
     .tabs {
+    //     #tab-btn-1:checked~#switch-1,
+    //     #tab-btn-2:checked~#switch-2,
+    //     #tab-btn-3:checked~#switch-3 {
+        
+    //             padding: 0.5rem 0rem;
+    // }
         &__wrapper {
             padding-top: 3rem;
         }
@@ -101,7 +107,7 @@
             width: 11rem;
             &_text{
                 padding-right: 2rem;
-                padding: 0.5rem 3.5rem;
+                padding: 0.5rem 4rem;
                 font-size: 0.9rem;
                 font-family: 'Open Sans', sans-serif;
                 text-align: center;
@@ -409,13 +415,14 @@
         left:  0;
         width: 100vw;
         opacity: 0.98;
-        visibility: hidden;
+        // visibility: hidden;
     
-        &.open {
-            visibility: visible;
-        }
+        // &.open {
+        //     visibility: visible;
+        // }
     
         .nav {
+            visibility: hidden;
             z-index: 3; //add this index in affort to overlay .promo__content__title {
             display: flex;
             flex-flow: column wrap;
@@ -432,6 +439,7 @@
             &.open {
               z-index: 3;
               transform: translateY(0);
+              visibility: visible;
             }
     
             &__link {
@@ -550,6 +558,16 @@
         }
     }
     .tabs {
+
+        #tab-btn-1:checked~#switch-1,
+        #tab-btn-2:checked~#switch-2,
+        #tab-btn-3:checked~#switch-3 {
+                font-size: 0.9rem;
+                text-align: center;
+                padding: 0.5rem 0rem;
+                width: 6.7rem;
+    }
+
         &__wrapper {
             padding-top: 2.7rem;
         }
@@ -559,9 +577,9 @@
             &_text{
                 padding-right: 0rem;
                 padding: 0.5rem 1.5rem;
-                &_active {
-                    padding: 0.5rem 2rem;
-                }
+                // &_active {
+                //     padding: 0.5rem 2rem;
+                // }
             }
         }
         &__content {
@@ -755,15 +773,18 @@
         padding: 1rem;
         display: flex;
         justify-content: center;
-      }
-      
-      .manual-btn {
+
+        .manual-btn {
         border: 2px solid #59595a;
         padding: 2%;
         border-radius: 50%;
         cursor: pointer;
         transition: 1s;
+
       }
+    }
+      
+      
       
       .manual-btn:not(:last-child) {
         margin-right: 2em;
@@ -775,7 +796,7 @@
       .manual-btn:focus:active {
         background: #424343;
       }
-      #radio1:checked ~ .first {
+      #radio1:checked .first {
         margin-left: 0;
       }
       
@@ -786,7 +807,20 @@
       #radio3:checked ~ .first {
         margin-left: -50%;
       }
+//--------------------------------active button color
+    //   #radio1:checked  .navigation-manual > #manual-btn-1 {
+    //     background-color: #d4811c;
 
+    //   }
+      
+    //   #radio2:checked {
+    //     background-color: #59595a;
+    //   }
+      
+    //   #radio3:checked ~ .first #manual-btn-3{
+    //     background-color: #59595a;
+    //   }
+//------------------------------------------------------------
     .stylish {
       &__text {
         padding-bottom: 1.1rem;

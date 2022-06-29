@@ -5,19 +5,37 @@
     #tab-btn-1:checked~#content-1,
     #tab-btn-2:checked~#content-2,
     #tab-btn-3:checked~#content-3 {
-    visibility: visible;
-    // display: block;
-    height: auto;
-    opacity: 100%;
-    transition: 2s;
+        visibility: visible;
+        // display: block;
+        height: auto;
+        opacity: 100%;
+        transition: 2s;
 
-}
+    }
+    #tab-btn-1:checked~#switch-1,
+    #tab-btn-2:checked~#switch-2,
+    #tab-btn-3:checked~#switch-3 {
+        display: inline-block;
+                font-size: 0.9rem;
+                font-family: 'Open Sans', sans-serif;
+                border: 1px solid #C6CBCD ;
+                border-bottom: 0.4rem solid #FFFFFF;
+                text-align: center;
+                padding: 0.5rem 0rem;
+                position: relative;
+                z-index: 15;
+                margin-bottom: -0.3rem;
+                background-color: #FFFFFF;
+    }
+    
+
     
     &__wrapper {
         padding-top: 100px;
     }
     &__tabs {
         // display: flex;
+        position: relative;
         justify-content: left;
         align-items: center;  
         &>input[type="radio"] {
@@ -37,16 +55,16 @@
             font-size: 0.9rem;
             font-family: 'Open Sans', sans-serif;
             text-align: center;
-            padding: 0.5rem 4.5rem;
-            &_active{
-                display: inline-block;
-                font-size: 0.9rem;
-                font-family: 'Open Sans', sans-serif;
-                border: 1px solid #C6CBCD ;
-                border-bottom: 3px solid #FFFFFF;
-                text-align: center;
-                padding: 0.5rem 5rem;
-            }
+            padding: 0.5rem 4rem;
+            // &_active{
+            //     display: inline-block;
+            //     font-size: 0.9rem;
+            //     font-family: 'Open Sans', sans-serif;
+            //     border: 1px solid #C6CBCD ;
+            //     border-bottom: 3px solid #FFFFFF;
+            //     text-align: center;
+            //     padding: 0.5rem 5rem;
+            // }
         }
     }
     &__content {
