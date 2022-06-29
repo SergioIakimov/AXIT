@@ -1,0 +1,897 @@
+
+
+@include tablet {
+    .container {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+    .header {
+        &__logo {
+            padding-left: 7rem;
+        }
+    }
+    .nav {
+        align-items: center;
+        padding-right: 0rem;
+    }
+    .promo {
+        min-height: 768px;
+        &__content {
+            padding-top: 8rem;
+            &__axit {
+                padding-left: 6rem;
+            }
+            &__logo img {
+                width: 12rem;
+                height: 5rem;
+            }
+            &__title  {
+                padding: 2.2rem 0;
+                width: 29rem;
+                & h1 {
+                    line-height: 2.6rem;
+                    font-size: 2rem;
+                    letter-spacing: 0.2rem;
+                }
+            }
+            &__descr {
+                padding: 2.2rem 13rem 2.3rem 0rem;
+                & h5 {
+                    line-height: 1rem;
+                    font-size: 0.8rem;
+                    letter-spacing: 0.05rem;
+                }
+            }
+            &__button {
+                height: 185%;
+            }
+            &__form {
+                &_title {
+                    padding: 2.4rem 0;
+                    & h4 {
+                        font-size: 1.15rem;
+                    }
+                }
+                &_text {
+                    & input {
+                        padding: 3rem 1rem 0.2rem 3rem;
+                    }
+                }
+                &_pass button {
+                    width: 25rem;
+                    margin-top: 4.9rem;
+                    padding: 1.3rem 0;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .social {
+        min-height: 105px;
+        &__wrapper {
+            padding: 0.8rem 0;
+        }
+        &__text {
+            &_title {
+                padding-bottom: 1.5rem;
+                & h4 {
+                    font-size: 1.1rem;
+                }
+            }
+            &_descr {
+                padding-right: 3rem;
+                & h5 {
+                    font-size: 0.87rem;
+                }
+            }
+        }
+        &__icon {
+            font-size: 0.9rem;
+            a  {
+                color: #CCCCCC;
+                padding: 0.9rem;
+            }
+        }
+    }
+    .tabs {
+    //     #tab-btn-1:checked~#switch-1,
+    //     #tab-btn-2:checked~#switch-2,
+    //     #tab-btn-3:checked~#switch-3 {
+        
+    //             padding: 0.5rem 0rem;
+    // }
+        &__wrapper {
+            padding-top: 3rem;
+        }
+        &__tab {
+            width: 11rem;
+            &_text{
+                padding-right: 2rem;
+                padding: 0.5rem 4rem;
+                font-size: 0.9rem;
+                font-family: 'Open Sans', sans-serif;
+                text-align: center;
+                &_active {
+                    padding: 0.5rem 4rem;
+                }
+            }
+        }
+        &__content {
+          &__text {
+            padding: 2rem 1rem 0px 5.2rem;
+            &_title {
+                padding-bottom: 4rem;
+                & h3 {
+                    font-size: 1.5rem;
+                }   
+            }
+            &_descr {
+                padding-bottom: 1rem;  
+                & h5 {
+                    font-size: 0.9rem;
+                } 
+            }
+          }  
+          &__img img{
+            height: 24.3rem;
+            width: 25rem;
+          } 
+          &__link {
+            margin-top: 1rem;
+          } 
+          &__button {
+            font-size: 1rem;
+          }
+        }
+    }
+    .awesome {
+        min-height: 626px;
+      &__text {
+        padding-bottom: 1.1rem;
+        padding-top: 5.6rem;
+        & h2 {
+            font-size: 1.5rem;
+        }
+        &::after {
+            top: 71%;
+        }
+
+        
+        &_descr {
+            padding-top: 5rem;
+            & h5 {
+              font-size: 0.88rem;
+            }
+        }
+      }
+      &__card {
+        &_title {
+            padding-top: 1rem;
+            & h4 {
+                font-size: 1.15rem;
+            }
+        }
+        &_descr {
+           padding-top: 2.8rem; 
+           & h5 {
+            font-size: 0.95rem;
+           }
+        }
+      }
+    }
+    .pricing {
+        min-height: 770px;
+      &__text {
+        padding-bottom: 1.1rem;
+        padding-top: 5.6rem;
+        & h2 {
+            font-size: 1.5rem;
+        }
+        &::after {
+            top: 71%;
+        }
+        &_descr {
+            padding-top: 5rem;
+            & h5 {
+              font-size: 0.88rem;
+            }
+        }
+      }
+      &__lists {
+        padding-top: 2.25rem;
+      }
+      &__list {
+        width: 20rem;
+        &_tarif {
+            padding: 0.6rem 0;
+        }
+        &_price {
+            padding: 1.5rem 0;
+        }
+        &_space {
+            
+            &_title {
+                padding: 0.6rem 0;
+            }
+            &_Gb {
+                padding: 0.6rem 0;
+            }
+
+        }
+      }
+      
+    }
+    .customers {
+        min-height: 614px;
+      &__text {
+        padding-bottom: 1.1rem;
+        padding-top: 5.6rem;
+        & h2 {
+            font-size: 1.5rem;
+        }
+        &::after {
+            top: 71%;
+        }
+        &_descr {
+            padding-top: 5rem;
+            & h5 {
+              font-size: 0.88rem;
+            }
+        }
+      }
+      &__card {
+        &_descr  {
+            padding: 1.7rem 1.5rem;
+        }
+        &__avatar {
+            padding-bottom: 3rem;
+            &__text {
+              padding-left: 1rem;
+              padding-top: 0.5rem;
+              &_title h4{
+                font-size: 1.1rem;
+              }
+              &_descr {  
+                padding-top: 0rem;
+                padding-bottom: 0.5rem;
+                & h5 {
+                    font-size: 0.9rem;
+                }            
+              }  
+            } 
+        }
+      }
+    }
+    .stylish {
+        min-height: 358px;
+      &__text {
+        padding-bottom: 1.1rem;
+        padding-top: 5.6rem;
+        & h2 {
+            font-size: 1.5rem;
+        }
+        &::after {
+            top: 52%;
+        }
+        &_descr {
+            padding-top: 5rem;
+            & h5 {
+              font-size: 0.88rem;
+            }
+        }
+      }
+      &__link {
+        padding-top: 2.5rem;
+      }
+      &__button {
+        padding: 1rem 7rem;
+      }
+    }
+    .contact {
+        min-height: 662px;
+      &__text {
+        padding-bottom: 1.1rem;
+        padding-top: 5.6rem;
+        & h2 {
+            font-size: 1.5rem;
+        }
+        &::after {
+            top: 73%;
+        }
+        &_descr {
+            padding-top: 5rem;
+            & h5 {
+              font-size: 0.88rem;
+            }
+        }
+      }
+      &__form {
+        &__name {         
+            &_text {
+                padding-right: 2rem;
+                & input {
+                    padding: 3.7rem 20.5rem 1.2rem 0rem;
+                }
+            }
+              
+        }
+        &__message {
+            &_text input {
+                padding: 3.7rem 19rem 13rem 0rem;
+              }
+        }
+        &_pass button{
+            width: 20rem;
+            margin-top: 2.3rem;
+        }
+      }
+    }
+    .footer__icon {
+        padding: 2.4rem 0rem;
+        & a {
+          font-size: 0.6rem;
+          padding: 1.2rem;
+        }
+    } 
+
+
+}
+@include mobile {
+    .container {
+        max-width: 288px;
+        margin: 0 auto;
+    }
+    .header {
+        &__container {
+            height: 56px;
+            max-width: 320px;
+        }
+        &__logo {
+            padding-left: 1rem;
+            z-index: 10;
+        }
+        & img {
+            height: 75%;
+        }
+    }
+    .menu-btn {
+        position: absolute;
+        z-index: 5; //greater than z-index of .menu and .nav = 3
+        right: 1rem;
+        top: 1rem;
+        height: 20px;
+        width: 28px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    
+        &__burger {
+            position: absolute;
+            right: 0;
+            top: 0.5rem;
+            width: 28px;
+            height: 3px;
+            background: white;
+            transition: all 0.5s ease-in-out;
+    
+            &::before {
+                content: '';
+                position: absolute;
+                top: -8px;
+                width: 28px;
+                height: 3px;
+                background: white;
+                transition: all 0.5s ease-in-out;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 8px;
+                width: 28px;
+                height: 3px;
+                background: white;
+                transition: all 0.5s ease-in-out;
+            }
+    
+            &.open {
+                transform: rotate(720deg);
+                background: transparent;
+    
+                &::before{
+                    transform: rotate(45deg) translate(5px, 8px);
+                }
+                &::after{
+                    width: 28px;
+                    transform: rotate(-45deg) translate(3px, -7px);
+                }
+    
+                
+            }
+        }
+    }
+    .menu {
+        z-index: 3; //add this index in affort to overlay .promo__content__title, cause using transform or opacity make z-index =0
+        position: fixed;
+        top: 0;
+        left:  0;
+        width: 100vw;
+        opacity: 0.98;
+        // visibility: hidden;
+    
+        // &.open {
+        //     visibility: visible;
+        // }
+    
+        .nav {
+            visibility: hidden;
+            z-index: 3; //add this index in affort to overlay .promo__content__title {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            background: rgb(13, 2, 2);
+            list-style-type: none;
+            padding-right: 1rem;
+            transform: translateY(-100%);
+            transition: all 0.5s ease-in-out;
+        
+            &.open {
+              z-index: 3;
+              transform: translateY(0);
+              visibility: visible;
+            }
+    
+            &__link {
+                transform: translateX(100vw);
+                transition: all 0.5s ease-in-out;
+    
+                &.open {
+                    transform: translateX(0);
+                }
+    
+                &.active > h3 {
+                    color: violet;
+                }
+            }
+    
+            &__link_text {
+                display: inline-block;
+                font-size: 1.5rem;
+                // text-transform: uppercase;
+                padding: 1.5rem 0;
+                // font-weight: 300;
+                transition: all 0.5s ease-in-out;
+    
+                &:hover {
+                    color: violet;
+                }
+            }
+        }
+    }
+    
+    @for $i from 1 through 5 {
+        .nav__link:nth-child(#{$i}) {
+            transition-delay: ($i*0.1s)+ 0.2s;
+        }
+    }
+    
+
+    .promo {
+        min-height: 1005px;
+        &__content {
+            flex-direction: column;
+            padding-top: 3rem;
+            &__axit {
+                padding-left: 0rem;
+            }
+            &__logo {
+                display: none;
+            }
+            &__title  {
+                padding: 2.2rem 0;
+                width: 18.5rem;
+                & h1 {
+                    text-align: center;
+                    font-size: 2.2rem;
+                    letter-spacing: 0.05rem;
+                }
+                &::after {
+                    top: 104%;
+                    left: 26%;
+                    width: 44%;
+                }
+            }
+            &__descr {
+                padding: 3.2rem 0rem 2.3rem 0rem;
+                & h5 {
+                    text-align: center;
+                }
+            }
+            &__button {
+                padding: 0.9rem 6rem;
+                width: 100%;
+            }
+            &__form {
+                margin-top: 3.75rem;
+                margin-left: 0;
+                &_title {
+                    padding: 2.1rem 0 1rem 0;
+                    & h4 {
+                        font-size: 0.89rem;
+                    }
+                }
+                &_text {
+                    & input {
+                        padding: 2rem 2rem 0.2rem 1rem;
+                    }
+                }
+                &_pass button {
+                    width: 18rem;
+                     margin-top: 5rem;
+                     font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    .social {
+        min-height: 239px;
+        &__wrapper {
+            flex-direction: column;
+            padding: 0.8rem 0;
+        }
+        &__text {
+            &_title {
+                text-align: center;
+                padding-top: 1.7rem;
+            }
+            &_descr {
+                text-align: center;
+                padding-bottom: 2rem;
+            }
+        }
+        &__icon {
+            font-size: 0.3rem;
+            a  {
+                padding: 0.75rem;
+            }
+        }
+    }
+    .tabs {
+
+        #tab-btn-1:checked~#switch-1,
+        #tab-btn-2:checked~#switch-2,
+        #tab-btn-3:checked~#switch-3 {
+                font-size: 0.9rem;
+                text-align: center;
+                padding: 0.5rem 0rem;
+                width: 6.7rem;
+    }
+
+        &__wrapper {
+            padding-top: 2.7rem;
+        }
+        &__tab {
+            width: 11rem;
+            
+            &_text{
+                padding-right: 0rem;
+                padding: 0.5rem 1.5rem;
+                // &_active {
+                //     padding: 0.5rem 2rem;
+                // }
+            }
+        }
+        &__content {
+          &__text {
+            border: 1px solid #C6CBCD;
+            padding: 2rem 1rem 4.5rem 1.2rem;
+            &_title {
+                text-align: center;
+                padding-bottom: 3.5rem;
+                & h3 {
+                    font-size: 1.2rem;
+                }   
+            }
+            &_descr {
+                text-align: center;
+                padding-bottom: 1rem;  
+                & h5 {
+                    font-size: 0.8rem;
+                } 
+            }
+          }  
+          &__img {
+            display: none;
+          } 
+
+          &__button {
+            width: 100%;
+            margin-top: 0.1rem;
+            font-size: 1rem;
+          }
+        }
+    }
+    .awesome {
+        min-height: 1255px;
+      &__text {
+        padding-bottom: 2.1rem;
+        padding-top: 2.6rem;
+        & h2 {
+            font-size: 1.1rem;
+        }
+        &::after {
+            top: 60%;
+            left: 27%;
+            width: 46%;
+
+        }
+        &_descr {
+            text-align: center;
+            padding-top: 5rem;
+            & h5 {
+              font-size: 0.88rem;
+            }
+        }
+      }
+      &__cards {
+        flex-direction: column;
+      }
+      &__card {
+        &_title {
+            padding-top: 1rem;
+            & h4 {
+                font-size: 1.15rem;
+            }
+        }
+        &_descr {
+           padding-top: 2.8rem; 
+           & h5 {
+            font-size: 0.95rem;
+           }
+        }
+      }
+    }
+    .pricing {
+        min-height: 770px;
+      &__text {
+        padding-bottom: 1.1rem;
+        padding-top: 2.9rem;
+        & h2 {
+            font-size: 1.5rem;
+        }
+        &::after {
+            top: 61%;
+            left: 27%;
+            width: 45%;
+        }
+        &_descr {
+            padding-top: 4.4rem;
+            text-align: center;
+        }
+      }
+      &__lists {
+        flex-direction: column;
+        padding-top: 0.25rem;
+      }
+      &__list {
+        width: 18rem;
+        margin-bottom: 1.4rem;
+        &_tarif {
+            padding: 0.6rem 0;
+            & h4 {
+                font-size: 1.1rem;
+            }
+        }
+        &_price {
+            padding: 1.5rem 0;
+            & h3 {
+                font-size: 1.5rem;
+            }
+        }
+        &_space {
+            
+            &_title {
+                padding: 0.6rem 0;
+            }
+            &_Gb {
+                & h5 {
+                font-size: 0.9rem;
+            }
+                padding: 0.6rem 0;
+            }
+
+        }
+      }
+      
+    }
+    .customers {
+       
+        min-height: 581px;
+        
+        &__text {
+            padding-bottom: 1.1rem;
+            padding-top: 1.9rem;
+            & h2 {
+                font-size: 1.5rem;
+            }
+            &::after {
+                top: 61%;
+                left: 27%;
+                width: 45%;
+            }
+            &_title {
+                text-align: center;
+            }
+            &_descr {
+                padding-top: 3.4rem;
+                text-align: center;
+            }
+        }
+
+
+        &__slider {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }  
+        &__cards {
+            width: 400%;
+            justify-content: start;
+          }
+      
+      &__card {
+        width: 25%;
+        transition: 1s;
+        &_descr  {
+            padding: 1.7rem 1.5rem;
+            & h5 {
+                font-size: 1rem;
+            }
+        }
+        &__avatar {
+            padding-bottom: 0rem;
+            &__text {
+              padding-left: 1rem;
+              padding-top: 0.5rem;
+              &_title h4{
+                font-size: 1rem;
+              }
+              &_descr {  
+                padding-top: 0rem;
+                padding-bottom: 0.5rem;
+                & h5 {
+                    font-size: 0.9rem;
+                }            
+              }  
+            } 
+        }
+      }
+    }
+    
+    .navigation-manual {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+
+        .manual-btn {
+        border: 2px solid #59595a;
+        padding: 2%;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 1s;
+
+      }
+    }
+      
+      
+      
+      .manual-btn:not(:last-child) {
+        margin-right: 2em;
+      }
+      
+      .manual-btn:hover {
+        background: #292a2a;
+      }
+      .manual-btn:focus:active {
+        background: #424343;
+      }
+      #radio1:checked .first {
+        margin-left: 0;
+      }
+      
+      #radio2:checked ~ .first {
+        margin-left: -25%;
+      }
+      
+      #radio3:checked ~ .first {
+        margin-left: -50%;
+      }
+//--------------------------------active button color
+    //   #radio1:checked  .navigation-manual > #manual-btn-1 {
+    //     background-color: #d4811c;
+
+    //   }
+      
+    //   #radio2:checked {
+    //     background-color: #59595a;
+    //   }
+      
+    //   #radio3:checked ~ .first #manual-btn-3{
+    //     background-color: #59595a;
+    //   }
+//------------------------------------------------------------
+    .stylish {
+      &__text {
+        padding-bottom: 1.1rem;
+        padding-top: 2.8rem;
+        & h2 {
+            font-size: 1.5rem;
+        }
+        &::after {
+            top: 37%;
+            left: 28%;
+            width: 45%;
+        }
+        &_descr {
+            text-align: center;
+            padding-top: 4rem;
+        }
+      }
+      &__link {
+        padding-top: 3.7rem;
+      }
+      &__button {
+        padding: 1rem 6rem;
+      }
+    }
+    .contact {
+        min-height: 843px;
+      &__text {
+        padding-bottom: 1.1rem;
+        padding-top: 3rem;
+        & h2 {
+            font-size: 1.5rem;
+        }
+        &::after {
+            top: 60%;
+            left: 28%;
+            width: 45%;
+        }
+        &_descr {
+            padding-top: 4.5rem;
+            text-align: center;
+        }
+      }
+      &__form {
+        flex-direction: column;
+        &__name {         
+            &_text {
+                padding-right: 2rem;
+                & input {
+                    padding: 3rem 8rem 1.2rem 0rem;
+                }
+            }
+              
+        }
+        &__message {
+            &_text input {
+                padding: 3rem 8rem 11.8rem 0rem;;
+              }
+        }
+        &_pass button{
+            width: 18rem;
+            margin-top: 3rem;
+        }
+      }
+    }
+    .footer__icon {
+        padding: 2.4rem 0rem;
+        & a {
+            font-size: 0.3rem;
+            padding: 0.8rem;
+        }
+    } 
+
+
+}

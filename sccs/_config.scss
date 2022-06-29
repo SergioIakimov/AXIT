@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@mixin mobile {
+    @media screen and (max-width:1023px) {
+        @content
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width:1509px) {
+        @content
+    }
+}
+@mixin desktop {
+    @media screen and (min-width:1510px) {
+        @content
+    }
+}
+

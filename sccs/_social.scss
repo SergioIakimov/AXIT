@@ -1,0 +1,45 @@
+.social {
+    min-height: 140px;
+    background-color: #F8EFEF;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+    
+    &__text {
+        // width: 40%;
+
+        &_title {
+            padding-bottom: 2rem;
+            
+        }
+        &_descr {
+           color: #86878B;
+        }
+        
+    }
+    &__container {
+       display: flex; 
+       align-items: center;
+    }
+    &__icons {
+        display: flex; 
+        align-items: center;
+        list-style: none;
+        // width: 70%;
+    }
+    &__icon {
+        
+        a  {
+            color: #CCCCCC;
+            ;
+            padding: 1.2rem;
+            
+            &:hover {
+                color: white;
+                transition: all 1s ease;
+            }
+        }
+    }
+}

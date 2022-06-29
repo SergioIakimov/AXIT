@@ -1,0 +1,34 @@
+.footer {
+    min-height: 165px;
+    background-color: black;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    &__icon {
+        padding: 2rem 0rem;
+        
+        a  {
+            color: #CCCCCC;
+            font-size: 0.8rem;
+            padding: 1.2rem;
+            
+            &:hover {
+                color: white;
+                transition: all 1s ease;
+            }
+        }       
+    }
+    &__copyright {
+        color:#FFFFFF80;
+        ;
+    }
+}

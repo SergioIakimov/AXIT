@@ -1,0 +1,48 @@
+.awesome {
+    min-height: 770px;
+    &__text {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4.1rem;
+        padding-top: 6.3rem;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 60%;
+            left: 43%;
+            width: 14%;
+            border: 1px solid #EC7979;
+        }
+
+        
+        &_descr {
+            padding-top: 6rem;
+            color: #86878B;
+        }
+    }
+    
+    &__cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        &_title{
+            padding-top: 2rem;
+        }
+        &_descr {
+           padding-top: 2.8rem; 
+           text-align: center;
+        }
+    }
+    
+    
+}

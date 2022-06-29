@@ -1,0 +1,116 @@
+
+
+
+.tabs {
+    #tab-btn-1:checked~#content-1,
+    #tab-btn-2:checked~#content-2,
+    #tab-btn-3:checked~#content-3 {
+        visibility: visible;
+        // display: block;
+        height: auto;
+        opacity: 100%;
+        transition: 2s;
+
+    }
+    #tab-btn-1:checked~#switch-1,
+    #tab-btn-2:checked~#switch-2,
+    #tab-btn-3:checked~#switch-3 {
+        display: inline-block;
+                font-size: 0.9rem;
+                font-family: 'Open Sans', sans-serif;
+                border: 1px solid #C6CBCD ;
+                border-bottom: 0.4rem solid #FFFFFF;
+                text-align: center;
+                padding: 0.5rem 0rem;
+                position: relative;
+                z-index: 15;
+                margin-bottom: -0.3rem;
+                background-color: #FFFFFF;
+    }
+    
+
+    
+    &__wrapper {
+        padding-top: 100px;
+    }
+    &__tabs {
+        // display: flex;
+        position: relative;
+        justify-content: left;
+        align-items: center;  
+        &>input[type="radio"] {
+            display: none;
+        }
+        &>div {
+            // display: none;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+        }  
+    }
+
+    &__tab {
+        &_text{
+            display: inline-block;
+            font-size: 0.9rem;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            padding: 0.5rem 4rem;
+            // &_active{
+            //     display: inline-block;
+            //     font-size: 0.9rem;
+            //     font-family: 'Open Sans', sans-serif;
+            //     border: 1px solid #C6CBCD ;
+            //     border-bottom: 3px solid #FFFFFF;
+            //     text-align: center;
+            //     padding: 0.5rem 5rem;
+            // }
+        }
+    }
+    &__content {
+        display: flex;
+        transition: 2s;
+        
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #C6CBCD;
+            border-right: none;
+            padding: 2.8rem 1rem 0px 6rem;
+            &_title {
+                padding-bottom: 4rem;   
+            }
+            &_descr {
+                padding-bottom: 3.3rem;  
+            }
+        }
+
+        &__button {
+            display: block;
+            width: 46%;
+            height: 250%;
+            color: #FFFFFF;
+            text-transform: none;
+            background-color: #EC7979;
+            border: none;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            &:hover {
+                background-color: rgb(126, 83, 114);
+                cursor: pointer;
+                transition: all 1s ease;
+            }
+        }
+        &__link {
+            text-decoration: none;
+        }
+    }
+    
+    
+}
+
